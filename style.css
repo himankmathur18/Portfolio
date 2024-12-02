@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #080808, #2802fd);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Header Navigation */
+/* Header Navigation */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center; /* Align items in the center vertically */
+  justify-content: space-between; /* Space between title and social icons */
+  font-size: x-large;
+  margin-bottom: 30px; /* Add spacing below the header */
+}
+
+header h1 {
+  margin: 0; 
+}
+
+.social-icons {
+  display: flex; 
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 30px; /* Add spacing between icons */
+}
+
+.social-icons a:hover {
+  color: #050505;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+}
+
+.left p {
+  margin-bottom: 20px;
+  color: #fbf7f7;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.download, 
+.view-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.download {
+  background-color: #00bfff;
+  color: #ffffff;
+}
+
+.view-btn {
+  background-color: transparent;
+  color: #00bfff;
+  border: 2px solid #00bfff;
+}
+
+.download:hover {
+  background-color: #008ecc;
+}
+
+.view-btn:hover {
+  background-color: #00bfff;
+  color: #ffffff;
+}
+
+/* Right Section */
+.right {
+  margin-left: 20px;
+}
+
+.profile-photo {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px 10px rgba(7, 7, 7, 0.617);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
