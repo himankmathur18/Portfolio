@@ -26,14 +26,13 @@ body {
 }
 
 /* Header Navigation */
-/* Header Navigation */
 header {
   width: 100%;
   display: flex;
-  align-items: center; /* Align items in the center vertically */
-  justify-content: space-between; /* Space between title and social icons */
+  align-items: center; 
+  justify-content: space-between; 
   font-size: x-large;
-  margin-bottom: 30px; /* Add spacing below the header */
+  margin-bottom: 30px; 
 }
 
 header h1 {
@@ -71,6 +70,7 @@ header h1 {
   margin-bottom: 20px;
   color: #fbf7f7;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .buttons {
@@ -78,34 +78,60 @@ header h1 {
   gap: 15px;
 }
 
-.download, 
-.view-btn {
+/* General Button Styles */
+.btn {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  border: none;
-  cursor: pointer;
   border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.download {
+/* Primary Button Style (Solid) */
+.btn.primary {
   background-color: #00bfff;
   color: #ffffff;
+  border: none;
 }
 
-.view-btn {
+.btn.primary:hover {
+  background-color: #008ecc;
+}
+
+/* Outline Button Style */
+.btn.outline {
   background-color: transparent;
   color: #00bfff;
   border: 2px solid #00bfff;
 }
 
-.download:hover {
-  background-color: #008ecc;
-}
-
-.view-btn:hover {
+.btn.outline:hover {
   background-color: #00bfff;
   color: #ffffff;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  background: #00bfff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #008ecc;
 }
 
 /* Right Section */
@@ -115,7 +141,7 @@ header h1 {
 
 .profile-photo {
   position: relative;
-  width: 300px;
+  width: 200px;
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
